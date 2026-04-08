@@ -1,4 +1,4 @@
-name: Deployment Exercise 1
+name: Deployment Exercise 2 - multi part workflow
 on: 
     workflow_run:
       workflows: ["Deployment Exercise 1"]   # exact name from deployment1.yaml
