@@ -1,5 +1,9 @@
 name: Deployment Exercise 1
-on: push
+on: 
+    workflow_run:
+      workflows: ["Deployment Exercise 1"]   # exact name from deployment1.yaml
+      types:
+        - completed
 jobs:
     deploy:
         runs-on: ubuntu-latest
